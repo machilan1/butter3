@@ -1,0 +1,46 @@
+aside{
+    font-size: 0.938rem;;
+    top:5.6rem;
+    left:0rem;
+    position: absolute;
+    width: 7rem;
+    
+}
+aside .sidetag-area{
+    padding-left: 1rem;
+    padding-top: .3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidetag{
+    padding-left: 1.1rem;
+    margin: .43rem 0;
+    height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidetag:hover{
+    cursor: pointer;
+}
+.sidetag .sidetag-ch{
+    white-space: nowrap;
+    align-self: center;
+    opacity: 0;
+    transition: transform .6s,opacity .6s;
+}
+.sidetag .sidetag-en{
+    white-space: nowrap;
+    transition: transform .6s,opacity .6s;
+}
+
+.sidetag:hover .sidetag-ch{
+    transform: translateY(-1.25rem);
+    opacity: 1;
+}
+
+.sidetag:hover .sidetag-en{
+    transform: translateY(-.5rem);
+    opacity: 0;
+}

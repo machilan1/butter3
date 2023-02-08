@@ -4,6 +4,7 @@ main > :nth-child(1){
     background-position: center center;
     background-size: cover;
 }
+
 main > :nth-child(2){
     background: url(/assets/img/pc/2.jpg);
     background-position: center center;
@@ -29,60 +30,118 @@ main > :nth-child(6){
     background-position: center center;
     background-size: cover;
 }
+
+
+
 section{
     position: relative;
     height: 100vh;
     width: 100vw;
-    outline: dotted 2px red;
 }
 
-section .content-area{
+.content-area{
     position: absolute;
     left:55.3%;
     top:30.1%;
     width: 23rem;
-    /* height: 10rem; */
-    background-color: aquamarine;
 }
 
-section .content-area h1{
+.content-area h1{
     margin-top: .3rem;
     font-size: 2.25rem;
     letter-spacing: .07rem;
 }
-section .content-area h2{
+.content-area h2{
     margin-top: .36rem;
     font-size: 1.125rem;
     font-weight: bold;
     letter-spacing: .08rem;
 }
-section .content-area .content-info{
-
+.content-area .content-info{
+    white-space: nowrap;
     margin-top: 1.18rem;
     margin-bottom: 1.8rem;
     font-size: 1rem;
 }
-section .content-area h3{
+.content-area h3{
     margin-bottom: .5rem;
     font-size: 0.813rem;
     letter-spacing: .08rem;
 }
-
-section .content-area h3 img{
+.content-area h3 img{
     transform: translateY(.1rem);
     margin-right: .5rem;
 }
-section .content-area p{
+.content-area p{
+    white-space: nowrap;
     margin-top: 1.6rem;
     font-size: 0.813rem;
     letter-spacing: .08rem;
 }
 
 
-section .shoplist{
+
+
+.shoplist{
     position: absolute;
-    bottom: min(2rem,2%);
+    bottom: min(4.34rem,8%);
     width: 100%;
-    height: 20rem;
-    background-color: yellow;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    outline: solid 2px green;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin: 0 2.93rem;
+    height: fit-content;
+    }
+.card-image{
+    overflow: hidden;
+    height: 11.875rem;
+    width: 11.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+}
+
+.product-card img{
+    height: 11.875rem;
+    width: 11.875rem;
+    object-fit: cover;
+    
+}
+.product-card .card-image-wide img{
+    height: 11.875rem;
+    width: 23.438rem;
+}
+
+.card-image:hover :nth-child(1){
+    display: none;
+}
+
+.card-image-wide{
+    overflow: hidden;
+    height: 11.875rem;
+    width: 23.438rem;
+}
+
+.card-image-wide:hover :nth-child(1){
+    display: none;
+}
+.card-title{
+    margin-top: 2rem;
+    font-size: 1.125rem;
+}
+
+.card-info{
+    font-family: "STXihei", HEITI TC, "HEITI TC", "黑體-繁", "微軟正黑體", "黑體", sans-serif;
+    font-size: 0.875rem;
+    margin-top: .34rem;
+    letter-spacing: .08rem;
 }

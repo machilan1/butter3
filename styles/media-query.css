@@ -1,0 +1,75 @@
+@media (max-width:100rem){
+    header{
+        top:1.9rem;
+    }
+
+
+    .content-area{
+        position: absolute;
+        top:28%;
+        left: 53.5%;
+        width: 23rem;
+    }
+    
+    .content-area h1{
+        margin-top: .3rem;
+        font-size: 1.625rem;
+        letter-spacing: .07rem;
+    }
+    .content-area h2{
+        margin-top: .36rem;
+        font-size: 0.938rem;
+        font-weight: bold;
+        letter-spacing: .08rem;
+    }
+    .content-area .content-info{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+    }
+    .content-area h3{
+        margin-bottom: .4rem;;
+        font-size: 0.75rem;
+        letter-spacing: .08rem;
+    }
+    .content-area h3 img{
+        transform: translateY(.1rem);
+        margin-right: .5rem;
+    }
+    .content-area p{
+        margin-top:1rem;
+        font-size: 0.75rem;
+        letter-spacing: .08rem;
+    }
+
+    /*  */
+    .shoplist{
+        bottom: min(2.5rem,8%);
+    }
+   
+    .product-card{
+        margin: 0 2.9rem;
+    }
+
+    .product-card img{
+        
+        margin-bottom: 2rem;
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .card-title{
+        margin-top: 1.53rem;
+    } 
+
+    .card-image{
+        margin-top: rem;
+        height:10rem;
+        width: 10rem;
+    }
+    .card-image-wide{
+        overflow: hidden;
+        height: 10rem;
+        width: 19.738rem;
+    }
+}
