@@ -1,0 +1,128 @@
+header{
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 64rem;
+    height: 5rem;
+    align-self:center ;
+}
+
+ .logo{
+    margin-top: 0rem;
+    margin-left: 2rem;
+}
+
+
+ .navbar{
+    padding-top: 1.7rem;
+    font-size: 0.938rem;
+    display: flex;
+    justify-content: space-between;
+    min-width: 32rem;
+}
+
+.navtag-other{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+.navbar li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.navtag-en{
+    transition: opacity .3s,transform .5s;
+}
+.navtag-ch{
+    opacity: 0;
+    transition: opacity .3s,transform .5s;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+}
+
+.navbar li:hover .navtag-en{
+    transform: translateY(-.5rem);
+    opacity: 0;
+}
+.navbar li:hover .navtag-ch{
+    transform: translateY(-1.2rem);
+    opacity: 1;
+}
+
+
+ .icon-area{
+    margin-left: 1.1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.icon-area > :nth-child(1n){
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+}
+
+.icon-area > :nth-child(1n){
+    margin: 0px .34rem;
+
+}
+
+.icon-check:hover{
+    cursor: pointer;
+}
+.icon-check:checked ~{
+    background-color: red;
+}
+
+
+.facebook-svg{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1px;
+}
+.facebook-svg path{
+    fill: black;
+    stroke: none;
+}
+.ig-svg{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1px;
+}
+.line-svg{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.line-svg .line-logo{
+    fill: black;
+    stroke: none;
+}
+
+.ask-svg{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 1px;
+}
+
+.ask-svg .ask-logo{
+    fill: black;
+    stroke: none;
+}
+.icon-bag-svg{
+    position: absolute;
+    fill: transparent;
+    width: fit-content;
+    height: fit-content;
+    stroke-width: 1px;
+    stroke: black;
+    outline: solid 2px yellow;
+}
