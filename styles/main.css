@@ -1,0 +1,12 @@
+*{
+    font-family: "Bree Serif",Arial;
+    
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    position: relative;
+}
