@@ -1,0 +1,88 @@
+
+main > :nth-child(1){
+    background: url(/assets/img/pc/1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main > :nth-child(2){
+    background: url(/assets/img/pc/2.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main > :nth-child(3){
+    background: url(/assets/img/pc/3.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main > :nth-child(4){
+    background: url(/assets/img/pc/4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main > :nth-child(5){
+    background: url(/assets/img/pc/5.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+main > :nth-child(6){
+    background: url(/assets/img/pc/6.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    outline: dotted 2px red;
+}
+
+section .content-area{
+    position: absolute;
+    left:55.3%;
+    top:30.1%;
+    width: 23rem;
+    /* height: 10rem; */
+    background-color: aquamarine;
+}
+
+section .content-area h1{
+    margin-top: .3rem;
+    font-size: 2.25rem;
+    letter-spacing: .07rem;
+}
+section .content-area h2{
+    margin-top: .36rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: .08rem;
+}
+section .content-area .content-info{
+
+    margin-top: 1.18rem;
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+}
+section .content-area h3{
+    margin-bottom: .5rem;
+    font-size: 0.813rem;
+    letter-spacing: .08rem;
+}
+
+section .content-area h3 img{
+    transform: translateY(.1rem);
+    margin-right: .5rem;
+}
+section .content-area p{
+    margin-top: 1.6rem;
+    font-size: 0.813rem;
+    letter-spacing: .08rem;
+}
+
+
+section .shoplist{
+    position: absolute;
+    bottom: min(2rem,2%);
+    width: 100%;
+    height: 20rem;
+    background-color: yellow;
+}
