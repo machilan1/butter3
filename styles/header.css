@@ -62,67 +62,76 @@ header{
     display: flex;
     margin-right: 1.5rem;
 }
+.icon-area svg *{
+    transition: .2s;
+}
 
 .icon-area > :nth-child(1n){
     position: relative;
     height: 2rem;
     width: 2rem;
-}
-
-.icon-area > :nth-child(1n){
     margin: 0px .34rem;
 
 }
 
-.icon-check:hover{
-    cursor: pointer;
-}
-.icon-check:checked ~{
-    background-color: red;
-}
 
-
-.facebook-svg{
+:is(.facebook-svg,.ig-svg,.line-svg,.ask-svg,.icon-bag-svg){
     fill: transparent;
+    stroke: black;
+    stroke-width: 1px;}
+
+:is(.facebook-svg,.ig-svg,.line-svg,.ask-svg,.icon-bag-svg):hover .circle{
+    fill: black;
     stroke: black;
     stroke-width: 1px;
 }
-.facebook-svg path{
+:is(.facebook-svg path,.line-logo,.ask-logo){
     fill: black;
     stroke: none;
 }
-.ig-svg{
-    fill: transparent;
-    stroke: black;
-    stroke-width: 1px;
-}
-.line-svg{
-    fill: transparent;
-    stroke: black;
-    stroke-width: 1px;
-}
-
-.line-svg .line-logo{
+:is(.facebook-svg path,.line-logo,.ask-logo){
     fill: black;
     stroke: none;
 }
 
-.ask-svg{
-    fill: transparent;
-    stroke: black;
-    stroke-width: 1px;
+:is(.facebook-svg,.ig-svg,.line-svg,.ask-svg,.icon-bag-svg):hover :is(.facebook-svg path,.line-logo,.ask-logo){
+    fill: white;
+}
+:is(.facebook-svg,.ig-svg,.line-svg,.ask-svg,.icon-bag-svg):hover .icon-stroke{
+stroke: white;
 }
 
-.ask-svg .ask-logo{
-    fill: black;
-    stroke: none;
-}
+
+
 .icon-bag-svg{
     position: absolute;
     fill: transparent;
-    width: fit-content;
-    height: fit-content;
-    stroke-width: 1px;
-    stroke: black;
-    outline: solid 2px yellow;
+    /* outline: solid 2px yellow; */
+}
+.icon-bag-svg:hover{
+    cursor: pointer;
+}
+
+.cart-icon-area{
+    position: relative;
+}
+
+.cart-count{
+    right: -.3rem;
+    top:-.3rem;
+    position: absolute;
+    font-size: .75rem;
+    padding-left: .33rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 12rem;
+    transition: outline 1.5s;
+}
+
+.cart-icon-area:hover .cart-count{
+    outline:solid 1px white;
+    
 }

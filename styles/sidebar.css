@@ -24,11 +24,25 @@ aside .sidetag-area{
 .sidetag:hover{
     cursor: pointer;
 }
+
+.selected .sidetag-en{
+    transform: translateY(-.5rem);
+    opacity: 0;
+}
+
 .sidetag .sidetag-ch{
     white-space: nowrap;
     align-self: center;
     opacity: 0;
-    transition: transform .6s,opacity .6s;
+    transition: background-color 1s,transform .6s,opacity .6s, letter-spacing .6s ease-in-out;
+}
+.selected .sidetag-ch{
+    letter-spacing: .05rem;
+    transform: translateY(-1.25rem);
+    opacity: 1;
+    background-color: black;
+    padding: 0px 5px;
+    color: white;
 }
 .sidetag .sidetag-en{
     white-space: nowrap;
