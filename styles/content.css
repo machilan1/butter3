@@ -34,6 +34,7 @@ main > :nth-child(6){
 
 
 section{
+    transition: height .5s,width .5s;
     position: relative;
     height: 100vh;
     width: 100vw;
