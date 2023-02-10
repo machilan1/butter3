@@ -1,0 +1,129 @@
+
+:root{
+    --margin-value:.95rem;
+}
+
+.gone{display: none;}
+
+
+.toggle-page{
+    z-index: 7;
+    position: fixed;
+    left:-100vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    transition: .6s;
+}
+
+.show-page{
+    left:0;
+}
+
+
+.toggle-logo{
+    margin-top: 2.75rem;
+    margin-left: 1rem;
+    height: 2.5rem;
+    width: 10rem;
+
+}
+.logo-mark{
+    float: left;
+    padding-top: .33rem;
+    width: 4rem;
+    height: 2.4rem;
+}
+.logo-letter{
+    float: left;
+    padding-left:0;
+    width: 5rem;
+    height: 2.4rem;
+}
+.toggle-page .tag-area{
+    /* outline: solid; */
+    margin-top: .66rem;
+    font-size: 0.813rem;
+    display: inline-block;
+}
+
+.nowat-ch{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 0 .1rem;
+
+}
+
+.toggle-page .sidetag-area{
+    color: rgb(184, 184, 184);
+}
+
+
+.toggle-page .sidetag{
+    margin:var(--margin-value);
+    /* outline: solid 1px red; */
+    padding: 0;
+    overflow: hidden;
+    width: 10rem;
+}
+
+.selected{
+    display: none;
+}
+.toggle-page .sidetag  .sidetag-ch{
+    align-self: baseline;
+    color: black;
+    opacity: 1;
+}
+
+
+.toggle-page .sidetag:hover .sidetag-en{
+    transform: none;
+    opacity: 1;
+}
+.toggle-page .sidetag:hover .sidetag-ch{
+    color: black;
+    transform: none;
+}
+
+
+
+.tag-area >a{
+    display: block;
+    margin-left: 1rem;
+    margin: var(--margin-value);
+}
+
+.tag-area > a:hover{
+    cursor: pointer;
+}
+
+
+
+.toggle-page .icon-area .cart-icon-area{
+    padding-top: .1rem;
+    }
+
+
+.toggle-page .icon-area {
+    position: absolute;
+    transform: scale(.83);
+    /* outline: solid 1px red; */
+    display: inline-block;
+    width: 20rem;
+    left: -2rem;
+    top:28rem
+    
+}
+
+.toggle-page .icon-area .cart-count{
+    display: none;
+}
+
+.toggle-page .close-button{
+    position:absolute;
+    right:1rem;
+    top:3.64rem;
+    
+}

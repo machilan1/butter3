@@ -33,6 +33,7 @@ aside .sidetag-area{
 .sidetag .sidetag-ch{
     white-space: nowrap;
     align-self: center;
+    color: black;
     opacity: 0;
     transition: background-color 1s,transform .6s,opacity .6s, letter-spacing .6s ease-in-out;
 }
@@ -52,6 +53,7 @@ aside .sidetag-area{
 .sidetag:hover .sidetag-ch{
     transform: translateY(-1.25rem);
     opacity: 1;
+    
 }
 
 .sidetag:hover .sidetag-en{

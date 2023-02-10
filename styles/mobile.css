@@ -1,0 +1,92 @@
+
+.mobile-banner{
+
+   
+}
+
+.product-banner{
+    height: 80vh;
+    width: 100vw;
+}
+.product-banner img{
+    object-fit: cover;
+    min-height:80vh
+
+}
+
+
+.product-content{
+    letter-spacing: 0.063rem;
+    text-align: center;
+    padding-top: 1.6rem;
+    /* padding-bottom: 1.6rem; */
+    min-height: 74vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+.product-content .banner-title-text{
+    margin-bottom:.2rem ;
+    font-size: 1.5rem;
+}
+.product-content .banner-subtitle-text{
+    font-size: .938rem;
+    font-weight: bold;
+}
+
+.product-content  :is(span,p){
+    color: rgb(122, 122, 122);
+    margin: 1rem 0;
+}
+.product-content .banner-info{
+    font-size: .75rem;
+}
+.product-content span{
+    margin-left: 1rem;
+    font-size: .75rem;
+}
+.product-content .banner-option{
+ 
+    font-size: .75rem;
+}
+
+.banner-slider{
+    position: relative;
+}
+.banner-slider img{
+    margin-bottom: .75rem;
+    
+}
+.slide{
+
+}
+.slide >img{
+    margin: auto;
+    left:auto;
+
+}
+.slide > h1{
+    font-size: 1.125rem;
+    margin-bottom: .4rem;
+}
+
+.slide > h2{
+    font-size: .75rem;
+}
+
+.prevBtn{
+    z-index: 1;
+    position: absolute;
+    left:2rem;
+    top: 12rem
+}
+.nextBtn{
+    z-index: 1;
+    position: absolute;
+    right:3rem;
+    top: 12rem
+}
+
+:is(.prevBtn,.nextBtn):hover{
+    cursor: pointer;
+}
